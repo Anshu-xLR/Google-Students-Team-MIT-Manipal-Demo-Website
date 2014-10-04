@@ -12,14 +12,23 @@ body{
 	background:url('images/background.jpg') repeat;
 }
 #container {
-	width:920px;
-	height:46%;
+	width:1000px;
+	height:60%;
 	display:block;
-	padding:40px;
+	padding:0px;
 	position:absolute;
-	top:34%;
+	top:32%;
 	left:50%;
 	margin-left:-500px;
 	background:#ffffff url('images/gst-12.png') no-repeat center center;
 	box-shadow:0 0 2px 0 #ffffff;
+}
+#footer {
+	position:absolute;
+	width:100%;
+	bottom:10px;
+	text-align:center;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
 }
