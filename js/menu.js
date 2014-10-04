@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	Cufon.now();
 	$("#menu").height($("#menu").height() + 60);
-	$(".bubble-pos0").css("bottom","130px");
+	$(".bubble-pos0").css("bottom","130px").css("z-index","4");
 	var dropFunc = function(e,ui) {
 		var classList = ui.draggable.get(0).className;
 		var start = classList.indexOf("bubble-pos");
