@@ -64,15 +64,15 @@ body{
 .bubble-gallery { background-position:-160px -80px; }
 .bubble-contact { background-position:-80px -80px; }
 
-.bubble-pos-4 { position:absolute; left:10%; margin-left:-40px; bottom:80px; }
-.bubble-pos-3 { position:absolute; left:20%; margin-left:-40px; bottom:70px; }
-.bubble-pos-2 { position:absolute; left:30%; margin-left:-40px; bottom:60px; }
-.bubble-pos-1 { position:absolute; left:40%; margin-left:-40px; bottom:50px; }
-.bubble-pos0 { position:absolute; left:50%; margin-left:-40px; bottom:40px; }
-.bubble-pos1 { position:absolute; left:60%; margin-left:-40px; bottom:50px; }
-.bubble-pos2 { position:absolute; left:70%; margin-left:-40px; bottom:60px; }
-.bubble-pos3 { position:absolute; left:80%; margin-left:-40px; bottom:70px; }
-.bubble-pos4 { position:absolute; left:90%; margin-left:-40px; bottom:80px; }
+.bubble-pos-4 { position:absolute; left:60px; bottom:80px; z-index:2; }
+.bubble-pos-3 { position:absolute; left:160px; bottom:70px; z-index:2; }
+.bubble-pos-2 { position:absolute; left:260px; bottom:60px; z-index:2; }
+.bubble-pos-1 { position:absolute; left:360px; bottom:50px; z-index:2; }
+.bubble-pos0 { position:absolute; left:460px; bottom:40px; z-index:1; }
+.bubble-pos1 { position:absolute; left:560px; bottom:50px; z-index:2; }
+.bubble-pos2 { position:absolute; left:660px; bottom:60px; z-index:2; }
+.bubble-pos3 { position:absolute; left:760px; bottom:70px; z-index:2; }
+.bubble-pos4 { position:absolute; left:860px; bottom:80px; z-index:2; }
 
 .arrow-down {
 	position:absolute;
