@@ -22,6 +22,7 @@ body{
 	margin-left:-500px;
 	background:#ffffff url('images/gst-12.png') no-repeat center center;
 	box-shadow:0 0 2px 0 #ffffff;
+	z-index:2;
 }
 #footer {
 	position:absolute;
@@ -33,6 +34,32 @@ body{
 	font-size:12px;
 	line-height:32px;
 	font-weight:bold;
+	z-index:1;
+}
+#back-logo {
+	width:180px;
+	height:160px;
+	display:block;
+	position:absolute;
+	left:50%;
+	top:60%;
+	margin-left:-90px;
+	margin-top:-80px;
+	background:url('images/back-logo.png') no-repeat;
+	text-align:center;
+	z-index:0;
+}
+#intro {
+	width:786px;
+	height:102px;
+	display:block;
+	position:absolute;
+	top:32%;
+	left:50%;
+	margin-top:-40px;
+	margin-left:-393px;
+	background:url('images/intro.png') no-repeat;
+	z-index:0;
 }
 #menu {
 	position:absolute;
@@ -42,6 +69,7 @@ body{
 	top:0px;
 	left:50%;
 	margin-left:-500px;
+	z-index:1;
 }
 
 .bubble {
@@ -52,11 +80,13 @@ body{
 	background:url('images/bubble.png') no-repeat;
 	text-align:center;
 	line-height:80px;
-	font-size:18px;
+	font-size:16px;
 	color:#ffffff;
 	overflow:hidden;
 	text-decoration:none;
 }
+
+.bubble-intro { position:absolute; left:460px; bottom:40px; z-index:3; }
 
 .bubble-home { background-position:-80px 0px; }
 .bubble-about { background-position:-160px 0px; }
@@ -64,15 +94,15 @@ body{
 .bubble-gallery { background-position:-160px -80px; }
 .bubble-contact { background-position:-80px -80px; }
 
-.bubble-pos-4 { position:absolute; left:60px; bottom:80px; z-index:2; }
-.bubble-pos-3 { position:absolute; left:160px; bottom:70px; z-index:2; }
-.bubble-pos-2 { position:absolute; left:260px; bottom:60px; z-index:2; }
-.bubble-pos-1 { position:absolute; left:360px; bottom:50px; z-index:2; }
-.bubble-pos0 { position:absolute; left:460px; bottom:40px; z-index:1; }
-.bubble-pos1 { position:absolute; left:560px; bottom:50px; z-index:2; }
-.bubble-pos2 { position:absolute; left:660px; bottom:60px; z-index:2; }
-.bubble-pos3 { position:absolute; left:760px; bottom:70px; z-index:2; }
-.bubble-pos4 { position:absolute; left:860px; bottom:80px; z-index:2; }
+.bubble-pos-4 { position:absolute; left:60px; bottom:80px; z-index:4; }
+.bubble-pos-3 { position:absolute; left:160px; bottom:70px; z-index:4; }
+.bubble-pos-2 { position:absolute; left:260px; bottom:60px; z-index:4; }
+.bubble-pos-1 { position:absolute; left:360px; bottom:50px; z-index:4; }
+.bubble-pos0 { position:absolute; left:460px; bottom:40px; z-index:3; }
+.bubble-pos1 { position:absolute; left:560px; bottom:50px; z-index:4; }
+.bubble-pos2 { position:absolute; left:660px; bottom:60px; z-index:4; }
+.bubble-pos3 { position:absolute; left:760px; bottom:70px; z-index:4; }
+.bubble-pos4 { position:absolute; left:860px; bottom:80px; z-index:4; }
 
 .arrow-down {
 	position:absolute;

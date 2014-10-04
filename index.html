@@ -13,6 +13,7 @@
 	<script type="text/javascript">
 		Cufon.replace('#main');
 	</script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
 	<div id="main">
@@ -22,55 +23,20 @@
 			<a href="javascript:void(0)" class="bubble bubble-events bubble-pos1"></a>
 			<a href="javascript:void(0)" class="bubble bubble-gallery bubble-pos-2"></a>
 			<a href="javascript:void(0)" class="bubble bubble-contact bubble-pos2"></a>
+			<a href="javascript:void(0)" class="bubble bubble-intro">Drag Here</a>
 			<div class="bubbleDrop"></div>
 			<div class="arrow-down"></div>
 		</div>
-		<div id="container">
+		<div id="container" style="display:none;">
 			<div style="text:align:center; height:100%; padding:20px;">
 				<h2 style="font-size:20px; text-align:center;">Welcome to GST Manipal's Website</h2>
 			</div>
 		</div>
+		<div id="back-logo"><img src="images/loader.gif" border="0" style="width:20px; height:20px; margin-top:3px; display:none;"></div>
+		<div id="intro"></div>
 		<div id="footer">
 			Copyright (c) 2014 - Google Student's Team - MIT Manipal
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			Cufon.now();
-			var dropFunc = function(e,ui) {
-				var classList = ui.draggable.get(0).className;
-				var start = classList.indexOf("bubble-pos");
-				var end = classList.indexOf(" ",start);
-				var curr = classList.substr(start,end-start);
-				ui.draggable.draggable("destroy");
-				$(this).droppable("destroy");
-				ui.draggable.removeAttr("style").removeClass(curr).addClass("bubble-pos0");
-				$(this).removeAttr("style").removeClass("bubble-pos0").addClass(curr);
-				ui.draggable.droppable({
-					drop: dropFunc
-				});
-				$(this).draggable({
-					revert: "invalid"
-				});
-				ui.draggable.hide();
-				$(this).hide();
-				ui.draggable.fadeIn();
-				$(this).fadeIn();
-			};
-			$(".bubble").draggable({
-				revert: "invalid"
-			});
-			$(".bubble-pos0").draggable("destroy");
-			$(".bubble-pos0").droppable({
-				drop: dropFunc
-			});
-			$("#container").mCustomScrollbar({
-				theme:"inset-2-dark",
-				scrollButtons:{
-					enable:true
-				}
-			});
-		});
-	</script>
 </body>
 </html>
