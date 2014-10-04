@@ -13,7 +13,7 @@ body{
 }
 #container {
 	width:1000px;
-	height:60%;
+	height:62%;
 	display:block;
 	padding:0px;
 	position:absolute;
@@ -26,9 +26,61 @@ body{
 #footer {
 	position:absolute;
 	width:100%;
-	bottom:10px;
+	height:6%;
+	bottom:0px;
 	text-align:center;
 	color:#ffffff;
 	font-size:12px;
+	line-height:32px;
 	font-weight:bold;
+}
+#menu {
+	position:absolute;
+	width:1000px;
+	height:32%;
+	display:block;
+	top:0px;
+	left:50%;
+	margin-left:-500px;
+}
+
+.bubble {
+	position:absolute;
+	width:80px;
+	height:80px;
+	display:block;
+	background:url('images/bubble.png') no-repeat;
+	text-align:center;
+	line-height:80px;
+	font-size:18px;
+	color:#ffffff;
+	overflow:hidden;
+	text-decoration:none;
+}
+
+.bubble-home { background-position:-80px 0px; }
+.bubble-about { background-position:-160px 0px; }
+.bubble-events { background-position:0px -80px; }
+.bubble-gallery { background-position:-160px -80px; }
+.bubble-contact { background-position:-80px -80px; }
+
+.bubble-pos-4 { position:absolute; left:10%; margin-left:-40px; bottom:80px; }
+.bubble-pos-3 { position:absolute; left:20%; margin-left:-40px; bottom:70px; }
+.bubble-pos-2 { position:absolute; left:30%; margin-left:-40px; bottom:60px; }
+.bubble-pos-1 { position:absolute; left:40%; margin-left:-40px; bottom:50px; }
+.bubble-pos0 { position:absolute; left:50%; margin-left:-40px; bottom:40px; }
+.bubble-pos1 { position:absolute; left:60%; margin-left:-40px; bottom:50px; }
+.bubble-pos2 { position:absolute; left:70%; margin-left:-40px; bottom:60px; }
+.bubble-pos3 { position:absolute; left:80%; margin-left:-40px; bottom:70px; }
+.bubble-pos4 { position:absolute; left:90%; margin-left:-40px; bottom:80px; }
+
+.arrow-down {
+	position:absolute;
+	bottom:6px;
+	left:50%;
+	margin-left:-22px;
+	width:44px;
+	height:30px;
+	display:block;
+	background:url('images/arrow-down.png') no-repeat;
 }
