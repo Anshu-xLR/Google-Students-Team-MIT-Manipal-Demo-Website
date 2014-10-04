@@ -71,6 +71,15 @@ body{
 	margin-left:-500px;
 	z-index:1;
 }
+#web-logo {
+	position:absolute;
+	width:180px;
+	height:42px;
+	display:block;
+	top:16px;
+	left:400px;
+	background:url('images/web-logo.png') no-repeat;
+}
 
 .bubble {
 	position:absolute;
