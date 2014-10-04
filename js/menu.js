@@ -49,7 +49,7 @@ $(document).ready(function() {
 				$("."+curr).fadeIn(800);
 			}
 			$("#menu").animate({
-				"height": "-=60"
+				"height": "32%"
 			},800);
 			$("#container").css("top","100%").show().animate({
 				"top": "32%"
