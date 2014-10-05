@@ -50,14 +50,14 @@ body{
 	z-index:0;
 }
 #intro {
-	width:786px;
-	height:102px;
+	width:580px;
+	height:200px;
 	display:block;
 	position:absolute;
 	top:32%;
 	left:50%;
-	margin-top:-40px;
-	margin-left:-393px;
+	margin-top:-140px;
+	margin-left:-290px;
 	background:url('images/intro.png') no-repeat;
 	z-index:0;
 }
